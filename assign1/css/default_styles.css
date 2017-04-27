@@ -1,0 +1,204 @@
+/* ---------------------------------
+  Lab 3 css stylesheet
+  Author: Ryan Sutcliffe (w0143446)
+  Last Updated: sept 28, 2016
+
+* -----------------------------------
+*/
+
+
+/*@import "cp_styles.css"; /*import my default css library */
+html	{margin: 0px; padding: 0px}
+body  {
+    margin:0px;
+    padding:0px;
+    font-family: "arial";
+}
+
+table {
+    border-collapse: collapse;
+    /*background-color: #ffc6aa;*/
+    border: 1px solid black;
+    width: 100%;
+
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+thead {
+    background-color: #041E37;
+    color: #CCCCCC;
+}
+tbody tr:nth-child(even){background-color: #728ca6}
+tbody tr:hover {background-color: #aa8f39}
+
+li {margin-left:18px; padding:3px}
+
+h4 {color:#041e37; letter-spacing:2px; font-size: 1.2em} /*ie. font size is 20% larger than the standard parent font size-- body or section*/
+/*div {opacity:0.9;} */
+
+#mainframe {height: auto;
+    /*border: 1px dashed #f00;*/
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 95%;
+    max-width: 1000px;
+    min-width: 450px;
+    background-color: #f2f2f2;
+    font-size: 11pt;
+    text-align: justify;
+    /*border rounding */
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+
+#menuleft  {
+    width:14%;
+    min-width: 80px;
+    max-width: 200px;
+    margin-top:25px;
+    margin-right:1px;
+    margin-bottom:25px;
+    /*border-right-width:2px;
+    border-right-style: double;
+    border-right-color:#CCCCCC; */
+    float:left;
+    padding:15px;
+    background-color:#f2f2f2 /*#666666;*/
+}
+@media screen and (max-width: 600px){
+    #menuleft  {display: none; width:0%}
+}
+
+#menucentre	{
+    float:right;
+    padding-right:15px;
+    width:76%;
+    margin-right:2px;
+    margin-left:2px;
+    margin-bottom:25px;
+    border-left: 1px solid #CCCCCC;
+    background-color:#f2f2f2
+}
+
+#menutopholder {
+    background-color:white
+}
+#menutop {
+    background-color:white; /*this could be swapped for a background image nicely */
+    font-size: 11pt;
+    /*
+     background: url([IMAGE.png]) bottom right no-repeat;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    */
+    /*border rounding */
+    -moz-border-radius-topright: 15px;
+    -webkit-border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    border-top-left-radius: 15px
+}
+
+#quote {border-left: 0px solid #CCCCCC;
+    /* float: center; */
+    width: 50%;
+    padding-right: 15px;
+    margin: auto
+}
+
+#logo {
+    float:right;
+    vertical-align:text-bottom;
+    height:80px;
+    -moz-border-radius-topright: 15px;
+    -webkit-border-top-right-radius: 15px;
+    border-top-right-radius: 15px
+}
+
+#skills li	{
+    text-align:left;
+    margin-left:20%;
+    margin-top:5px
+} /*Page specific (cv.html) */
+
+#mainwrapper {
+    float: left;
+    min-width: 450px;
+
+}
+.textmain {margin-left:2%; margin-right: 2%}
+
+/*Page specific (index.html) */
+.textmainfull {margin-left:2%; margin-right: 195px}
+@media screen and (max-width: 600px){
+    .textmainfull {margin-left:2%; margin-right: 2%}
+}
+.error {
+    color:red;
+}
+.skilllist {margin-left:2%;}
+.firstcharacter {
+    float: left;
+    color: black;
+    font-size: 50px;
+    line-height: 40px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+div.clear {clear: both}
+
+.links {text-align:center}
+
+.links a  {color:#003366;
+    font-family:arial;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-decoration:none
+}
+.links a:visited {color:#666666; text-decoration:none}
+.links a:hover 	{color:#CC6600}
+.links a:active 	{color:green}
+
+.order  {color:white;
+    font-family:arial;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-decoration:none
+}
+.order:visited {color:white; text-decoration:none}
+.order:hover 	{color:yellow}
+.order:active 	{color:white}
+
+textarea {background-color:#FFFFFF}
+table {font-size:9pt}
+
+iframe {border-style: none; width: 100%; height: 160px}
+
+.footer {
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    clear: both
+}
+.footertext {
+    font-size:7pt;
+    font-family:"times new roman";
+    color:black
+}
+
+
+
+
